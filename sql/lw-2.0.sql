@@ -11,7 +11,7 @@
  Target Server Version : 50718
  File Encoding         : 65001
 
- Date: 04/01/2022 15:04:00
+ Date: 17/01/2022 13:22:15
 */
 
 SET NAMES utf8mb4;
@@ -186,7 +186,7 @@ CREATE TABLE `QRTZ_SCHEDULER_STATE` (
 -- Records of QRTZ_SCHEDULER_STATE
 -- ----------------------------
 BEGIN;
-INSERT INTO `QRTZ_SCHEDULER_STATE` VALUES ('RuoyiScheduler', 'VM-0-4-centos1641226651355', 1641278423936, 15000);
+INSERT INTO `QRTZ_SCHEDULER_STATE` VALUES ('RuoyiScheduler', 'VM-0-4-centos1641655853076', 1641866936368, 15000);
 COMMIT;
 
 -- ----------------------------
@@ -266,13 +266,13 @@ CREATE TABLE `QRTZ_TRIGGERS` (
 -- Records of QRTZ_TRIGGERS
 -- ----------------------------
 BEGIN;
-INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME10', 'SYSTEM', 'TASK_CLASS_NAME10', 'SYSTEM', NULL, 1641308400000, -1, 5, 'WAITING', 'CRON', 1641277180000, 0, NULL, -1, '');
-INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME11', 'SYSTEM', 'TASK_CLASS_NAME11', 'SYSTEM', NULL, 1641280200000, -1, 5, 'WAITING', 'CRON', 1641277181000, 0, NULL, -1, '');
-INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME4', 'SYSTEM', 'TASK_CLASS_NAME4', 'SYSTEM', NULL, 1641277200000, -1, 5, 'PAUSED', 'CRON', 1641277178000, 0, NULL, 2, '');
-INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME6', 'SYSTEM', 'TASK_CLASS_NAME6', 'SYSTEM', NULL, 1641277200000, -1, 5, 'PAUSED', 'CRON', 1641277179000, 0, NULL, -1, '');
-INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME7', 'SYSTEM', 'TASK_CLASS_NAME7', 'SYSTEM', NULL, 1641319200000, -1, 5, 'WAITING', 'CRON', 1641277179000, 0, NULL, -1, '');
-INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME8', 'SYSTEM', 'TASK_CLASS_NAME8', 'SYSTEM', NULL, 1641319200000, -1, 5, 'WAITING', 'CRON', 1641277179000, 0, NULL, -1, '');
-INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME9', 'SYSTEM', 'TASK_CLASS_NAME9', 'SYSTEM', NULL, 1641311880000, -1, 5, 'WAITING', 'CRON', 1641277180000, 0, NULL, -1, '');
+INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME10', 'SYSTEM', 'TASK_CLASS_NAME10', 'SYSTEM', NULL, 1641913200000, -1, 5, 'WAITING', 'CRON', 1641829480000, 0, NULL, -1, '');
+INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME11', 'SYSTEM', 'TASK_CLASS_NAME11', 'SYSTEM', NULL, 1641867000000, 1641863400000, 5, 'WAITING', 'CRON', 1641829480000, 0, NULL, -1, '');
+INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME4', 'SYSTEM', 'TASK_CLASS_NAME4', 'SYSTEM', NULL, 1641829500000, -1, 5, 'PAUSED', 'CRON', 1641829479000, 0, NULL, 2, '');
+INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME6', 'SYSTEM', 'TASK_CLASS_NAME6', 'SYSTEM', NULL, 1641829500000, -1, 5, 'PAUSED', 'CRON', 1641829479000, 0, NULL, -1, '');
+INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME7', 'SYSTEM', 'TASK_CLASS_NAME7', 'SYSTEM', NULL, 1641924000000, 1641837600000, 5, 'WAITING', 'CRON', 1641829480000, 0, NULL, -1, '');
+INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME8', 'SYSTEM', 'TASK_CLASS_NAME8', 'SYSTEM', NULL, 1641924000000, 1641837600000, 5, 'WAITING', 'CRON', 1641829480000, 0, NULL, -1, '');
+INSERT INTO `QRTZ_TRIGGERS` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME9', 'SYSTEM', 'TASK_CLASS_NAME9', 'SYSTEM', NULL, 1641916680000, 1641830280000, 5, 'WAITING', 'CRON', 1641829480000, 0, NULL, -1, '');
 COMMIT;
 
 -- ----------------------------
@@ -691,7 +691,7 @@ CREATE TABLE `sys_job` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `sys_job` VALUES (4, '会话存档', 'SYSTEM', 'conversationArchiveTask.FinanceTask', '0 */1 * * * ?', '3', '1', '1', 'admin', '2020-12-13 12:14:38', 'admin', '2021-10-18 13:33:16', '');
-INSERT INTO `sys_job` VALUES (6, '定时消息群发', 'SYSTEM', 'groupMessageTask.messageTask', '0 */1 * * * ?', '1', '1', '1', 'admin', '2021-02-10 10:07:22', 'admin', '2022-01-03 21:39:15', '');
+INSERT INTO `sys_job` VALUES (6, '定时消息群发', 'SYSTEM', 'groupMessageTask.messageTask', '0 */1 * * * ?', '1', '1', '1', 'admin', '2021-02-10 10:07:22', 'admin', '2021-10-30 18:42:26', '');
 INSERT INTO `sys_job` VALUES (7, '联系客户统计数据拉取', 'SYSTEM', 'UserBehaviorDataTak.getUserBehaviorData', '0 0 2 * * ?', '1', '1', '0', 'admin', '2021-02-25 16:47:59', 'admin', '2021-07-29 18:44:25', '');
 INSERT INTO `sys_job` VALUES (8, '群聊数据统计数据拉取', 'SYSTEM', 'GroupChatStatisticTask.getGroupChatData', '0 0 2 * * ? ', '1', '1', '0', 'admin', '2021-02-25 16:49:44', '', '2021-07-29 18:44:26', '');
 INSERT INTO `sys_job` VALUES (9, '首页数据统计', 'SYSTEM', 'PageHomeDataTask.getPageHomeDataData', '0 58 23 * * ? ', '1', '1', '0', 'admin', '2021-02-25 16:52:23', 'admin_prod', '2021-12-07 23:59:09', '');
@@ -713,7 +713,7 @@ CREATE TABLE `sys_job_log` (
   `exception_info` varchar(2000) DEFAULT '' COMMENT '异常信息',
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`job_log_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=299941 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='定时任务调度日志表';
+) ENGINE=InnoDB AUTO_INCREMENT=292904 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='定时任务调度日志表';
 
 -- ----------------------------
 -- Records of sys_job_log
@@ -736,7 +736,7 @@ CREATE TABLE `sys_logininfor` (
   `msg` varchar(255) DEFAULT '' COMMENT '提示消息',
   `login_time` datetime DEFAULT NULL COMMENT '访问时间',
   PRIMARY KEY (`info_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8616 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='系统访问记录';
+) ENGINE=InnoDB AUTO_INCREMENT=7830 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='系统访问记录';
 
 -- ----------------------------
 -- Records of sys_logininfor
@@ -767,7 +767,7 @@ CREATE TABLE `sys_menu` (
   `update_time` datetime DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) DEFAULT '' COMMENT '备注',
   PRIMARY KEY (`menu_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2199 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='菜单权限表';
+) ENGINE=InnoDB AUTO_INCREMENT=2216 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='菜单权限表';
 
 -- ----------------------------
 -- Records of sys_menu
@@ -1031,6 +1031,16 @@ INSERT INTO `sys_menu` VALUES (2191, '企业动态', 2198, 44, 'enterprise', 'fr
 INSERT INTO `sys_menu` VALUES (2192, '发表动态', 2198, 43, 'publish', 'friendCircle/publish', 1, 'C', '1', '0', 'friendCircle:enterprise:publish', '#', 'admin_prod', '2021-11-30 21:44:21', 'admin_prod', '2021-12-26 16:37:32', '');
 INSERT INTO `sys_menu` VALUES (2197, '客户公海', 2052, 81, 'highSeas', NULL, 1, 'M', '0', '0', '', '#', 'admin_prod', '2021-12-26 16:23:43', 'admin_prod', '2021-12-26 16:29:28', '');
 INSERT INTO `sys_menu` VALUES (2198, '客户朋友圈', 2186, 45, 'friendCircle', NULL, 1, 'M', '0', '0', '', 'date-range', 'admin_prod', '2021-12-26 16:34:18', 'admin_prod', '2021-12-26 16:38:28', '');
+INSERT INTO `sys_menu` VALUES (2199, '微信客服', 2052, 82, 'customerService', NULL, 1, 'M', '0', '0', NULL, 'wechat', 'admin_prod', '2022-01-09 21:06:51', '', NULL, '');
+INSERT INTO `sys_menu` VALUES (2200, '客服管理', 2199, 1, 'index', 'customerService/customerServiceManage/index.vue', 1, 'C', '0', '0', 'service:manage:index', 'nested', 'admin_prod', '2022-01-09 21:08:14', '', NULL, '');
+INSERT INTO `sys_menu` VALUES (2201, '运营中心', 0, 5, 'operateCenter', NULL, 1, 'M', '0', '0', NULL, '#', 'admin_prod', '2022-01-09 21:37:26', '', NULL, '');
+INSERT INTO `sys_menu` VALUES (2202, '首页', 2201, 10, 'index', NULL, 1, 'M', '0', '0', NULL, '#', 'admin_prod', '2022-01-09 21:38:59', '', NULL, '');
+INSERT INTO `sys_menu` VALUES (2203, '数据分析', 2202, 10, 'dataAnalysis', 'operateCenter/index/dataAnalysis', 1, 'C', '0', '0', '/operateCenter/dataAnalysis', '#', 'admin_prod', '2022-01-09 21:44:34', 'admin_prod', '2022-01-09 22:23:37', '');
+INSERT INTO `sys_menu` VALUES (2204, '运营分析', 2201, 20, 'operateAnalysis', NULL, 1, 'M', '0', '0', '', '#', 'admin_prod', '2022-01-09 21:46:35', 'admin_prod', '2022-01-09 21:46:51', '');
+INSERT INTO `sys_menu` VALUES (2205, '客户分析', 2204, 10, 'customerAnalysis', 'operateCenter/operateAnalysis/customerAnalysis', 1, 'C', '0', '0', '/operateCenter/operateAnalysis/customerAnalysis', '#', 'admin_prod', '2022-01-09 21:50:04', 'admin_prod', '2022-01-09 21:57:22', '');
+INSERT INTO `sys_menu` VALUES (2206, '客群分析', 2204, 20, 'groupAnalysis', 'operateCenter/operateAnalysis/groupAnalysis', 1, 'C', '0', '0', '/operateCenter/operateAnalysis/groupAnalysis', '#', 'admin_prod', '2022-01-09 21:51:46', 'admin_prod', '2022-01-09 21:57:33', '');
+INSERT INTO `sys_menu` VALUES (2207, '会话分析', 2204, 30, 'conversationAnalysis', 'operateCenter/operateAnalysis/conversationAnalysis', 1, 'C', '0', '0', '/operateCenter/operateAnalysis/conversationAnalysi', '#', 'admin_prod', '2022-01-09 21:53:47', 'admin_prod', '2022-01-09 22:05:10', '');
+INSERT INTO `sys_menu` VALUES (2208, '场景管理', 2199, 2, 'sceneManage', 'customerService/sceneManage/index.vue', 1, 'C', '0', '0', 'service:scene:index', 'build', 'admin_prod', '2022-01-10 17:06:42', 'admin_prod', '2022-01-10 17:06:50', '');
 COMMIT;
 
 -- ----------------------------
@@ -1079,7 +1089,7 @@ CREATE TABLE `sys_oper_log` (
   `error_msg` varchar(2000) DEFAULT '' COMMENT '错误消息',
   `oper_time` datetime DEFAULT NULL COMMENT '操作时间',
   PRIMARY KEY (`oper_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=85572 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='操作日志记录';
+) ENGINE=InnoDB AUTO_INCREMENT=77261 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='操作日志记录';
 
 -- ----------------------------
 -- Records of sys_oper_log
@@ -1140,7 +1150,7 @@ CREATE TABLE `sys_role` (
 BEGIN;
 INSERT INTO `sys_role` VALUES (1, '超级管理员', 'admin', 1, '1', '0', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '超级管理员');
 INSERT INTO `sys_role` VALUES (2, '企业微信用户', 'WeCome', 2, '2', '0', '0', 'admin', '2018-03-16 11:33:00', 'admin', '2021-07-29 18:20:10', '企业微信用户');
-INSERT INTO `sys_role` VALUES (3, '企业微信体验账号', 'wecome_experience', 0, '1', '0', '0', 'admin', '2021-02-13 20:53:40', 'admin_prod', '2021-12-29 18:26:43', NULL);
+INSERT INTO `sys_role` VALUES (3, '企业微信体验账号', 'wecome_experience', 0, '1', '0', '0', 'admin', '2021-02-13 20:53:40', 'admin', '2021-07-17 22:35:44', NULL);
 INSERT INTO `sys_role` VALUES (4, '试用角色', 'try_out', 0, '1', '0', '0', 'admin', '2021-02-22 14:54:16', 'admin', '2021-04-20 09:13:01', NULL);
 INSERT INTO `sys_role` VALUES (5, '企业账户', 'CROP_ADMIN_ROLE', 0, '1', '0', '0', 'admin', '2021-04-07 22:31:12', 'admin', '2021-04-07 22:35:29', '企业级账号，相当于一个租户');
 COMMIT;
@@ -1763,7 +1773,7 @@ CREATE TABLE `sys_user` (
   `user_name` varchar(30) NOT NULL COMMENT '用户账号',
   `nick_name` varchar(30) NOT NULL COMMENT '用户昵称',
   `user_type` varchar(2) DEFAULT '00' COMMENT '用户类型（00系统用户）(11:企业微信用户)',
-  `email` varchar(50) DEFAULT '' COMMENT '用户邮箱',
+  `email` varchar(100) DEFAULT '' COMMENT '用户邮箱',
   `phonenumber` varchar(11) DEFAULT '' COMMENT '手机号码',
   `sex` char(1) DEFAULT '0' COMMENT '用户性别（0男 1女 2未知）',
   `avatar` varchar(100) DEFAULT '' COMMENT '头像地址',
@@ -1869,6 +1879,134 @@ CREATE TABLE `we_allocate_customer` (
 -- Records of we_allocate_customer
 -- ----------------------------
 BEGIN;
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAA-0xOuKYUHh-c2775AzVArA', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAA0P6NqSfZ5pwOjzixx0qsdg', '2021-12-27 23:25:39', 'SunXiWang', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAA0za1PA2XJjb6FP1tWXIusg', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAA11pq_y9YlVa75cwJfdyq4Q', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAA11pq_y9YlVa75cwJfdyq4Q', '2021-12-27 23:25:39', 'SunXiWang', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAA2-YZHc-aKsGFbWmramFtIg', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAA2-YZHc-aKsGFbWmramFtIg', '2021-12-27 23:25:39', 'JiXuXu', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAA25vRZ_8Y9uVe4NY782H-WA', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAA4L_cDcJKjGsD_rFdbXYXXQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAA617zOzAIg-0sZG3Vok7BUA', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAA6T34WzJJ9r5E6m70H-wS5Q', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAA8B9OlGEo_QMHm6Cu87BboA', '2021-12-27 23:25:39', 'ZouJian', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAA9pPqkEad_auJDZ-RqPwYWQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAA5o8dFp-aHCdk5wI5G4w_w', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAaDDXaMLgzujxEIxCIdtg5Q', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAAs3lI2L2cqDslOurS493EA', '2021-12-27 23:25:39', 'ZouJian', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAb40dboMCJzFZ7nk6AEJQLQ', '2021-12-27 23:25:39', 'petercai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAABjyjjR4hFWYYL1ZJYtzLRw', '2021-12-27 23:25:39', 'petercai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAABwBVqbixPFil7e8rf2LTaQ', '2021-12-27 23:25:39', 'ZouJian', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAbYgCiE1Li4f1AyXGn2l0VA', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAABY_f_iw_NBLUh78xq5Jw1A', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAACBJGON2iNVj1GEkxRm9FMA', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAACcqffCwYfx14BgQM21h4PA', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAACHiVWyq3SYafk1kpe9UM3w', '2021-12-27 23:25:39', 'ZouJian', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAActhuRhssxiHacSWqXwRn-A', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAcVoRGKX9fc8TU8a1UyEZpQ', '2021-12-27 23:25:39', 'SunXiWang', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAACwQ_NBBocBQqPnVz9vTsWg', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAADa3hDr7g5NekxBXwXIsUcQ', '2021-12-27 23:25:39', 'SunXiWang', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAADa3hDr7g5NekxBXwXIsUcQ', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAADa3hDr7g5NekxBXwXIsUcQ', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAdaTRScQDKF2EFZPXoUsCBg', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAdQxQW1T_P1bfVrzGLBVH8g', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAdQxQW1T_P1bfVrzGLBVH8g', '2021-12-27 23:25:39', 'ZouJian', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAeDibHUYDi2nuCVkoXY0AtQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAegvNwGG44Cb4Hqz1wmF7qw', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAEr-o1AZnAjBvTIw6d9Hy_Q', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAEr-o1AZnAjBvTIw6d9Hy_Q', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAFoIYgvJJFimqTiny2_8U3g', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAFoIYgvJJFimqTiny2_8U3g', '2021-12-27 23:25:39', 'JiangPengKai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAFoIYgvJJFimqTiny2_8U3g', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAfR41VgWW6npVYWfywXOWMQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAftNZNN9td9Phhs6HK2Zlfg', '2021-12-27 23:25:39', 'petercai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAgeyl3wX6hYmd6ib_l6QExw', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAgwJi_zZNkNEV2qUviUQ9wQ', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAH-7czor5g0Ws0nXF43xXew', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAH3t8bD-XmSGgJ9IaTprioQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAH86zEyzhWUPgpU2660Pwvg', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAHSQBfWDOMSWB8Pnx4p6wiA', '2021-12-27 23:25:39', 'petercai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAHSQBfWDOMSWB8Pnx4p6wiA', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAIH-T9ekaE-Q52N2lKWeInw', '2021-12-27 23:25:39', 'petercai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAIH-T9ekaE-Q52N2lKWeInw', '2021-12-27 23:25:39', 'ZouJian', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAimAXQH9n0xi48mF6i1muJw', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAISnA8-s6Tp_vGmL_CmvULw', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAISnA8-s6Tp_vGmL_CmvULw', '2021-12-27 23:25:39', 'JiangPengKai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAJ3ufqXoN2KWEbsXILHfZOQ', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAJ7wR8qAXNyjOXqGD1-s-OQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAJF9WzkhJAl2ho0DtJo7TjQ', '2021-12-27 23:25:39', 'ZouJian', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAK03JMo4xv-5Ipmj9Lzk7cw', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAkalMQoV9zomXjcv13HQ6Xw', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAKi80J8sjoPVxEYYL3rFt2w', '2021-12-27 23:25:39', 'petercai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAl6PkS9_RmgyWiCNmstN_XQ', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAlDBWdFtwNmbnn0O0KNT3RQ', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAALn4u9eHJTsEo-RC74Wp8xw', '2021-12-27 23:25:39', 'WangXiaoFeng', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAALqUolgnmXovMBEcAgUvU1g', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAALqUolgnmXovMBEcAgUvU1g', '2021-12-27 23:25:39', 'JiXuXu', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAALqUolgnmXovMBEcAgUvU1g', '2021-12-27 23:25:39', 'SunXiWang', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAALqUolgnmXovMBEcAgUvU1g', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAmNfC6xOiX3dZ4c86ot0TDA', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAn0VKABCH3tHfJ06pihQTaA', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAN2E5V9CAyo2LI9kM4hLm4w', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAna8UFCCdg67XkoT3ESOW3A', '2021-12-27 23:25:39', 'ZouJian', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAANr1jFktoNnQff-ZonJfS5A', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAnXfAW094gVj7CsJwStVGdw', '2021-12-27 23:25:39', 'JiangPengKai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAoCBD1frD3hRplbsXoBLx6g', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAoJfSK0rgT-LmOrR-bN4dBA', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAOjOVz7Wg9MCKyoRtnNT4Mg', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAoKVraCxcxJNwC9a2JjbU2w', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAoKVraCxcxJNwC9a2JjbU2w', '2021-12-27 23:25:39', 'JiXuXu', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAot70aNMARueZBX0dmhctHA', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAoVW7mrLxaUVCU6_DxCS4iQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAoVW7mrLxaUVCU6_DxCS4iQ', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAoyE3PRaHxt_27AMIdfRaeg', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAApC9WFn_EmLaSQ5NNpHPiPw', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAplgWxQ2709vdLZLgry6GVA', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAPm8z602tM4MDE3WR-cInyw', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAPqUlzvnP3Sc_XS4bxbA9Ug', '2021-12-27 23:25:39', 'JiangPengKai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAApTcSW-3caqljFmKhm0r-bQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAApTcSW-3caqljFmKhm0r-bQ', '2021-12-27 23:25:39', 'JiangPengKai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAApTcSW-3caqljFmKhm0r-bQ', '2021-12-27 23:25:39', 'LiAng', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAApTcSW-3caqljFmKhm0r-bQ', '2021-12-27 23:25:39', 'SunXiWang', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAqz3dyuRELjrwvRWG8aNgkw', '2021-12-27 23:25:39', 'SunXiWang', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAr3nm9kRCshxvnwMSOi6rcQ', '2021-12-27 23:25:39', 'LiAng', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAArinDSx2BSy7ktN_VxYAkDQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAARrQYiHmOSig9M4t30q0k2g', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAs2aGaM2UtEpCX04iSP47wQ', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAASE12iNl8ygMl1bETYPnmBA', '2021-12-27 23:25:39', 'ZouJian', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAASHmR25O4t-xB8mHKMfgXxg', '2021-12-27 23:25:39', 'WangXiaoFeng', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAsiej3RZarMYNFseeaYOPQw', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAsKPThAa4dWmD3FvDEtT-Dg', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAsQVuCR_zoXfnQsnCGG25rQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAASVCGwTG25dV3tv4VCm5P8A', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAASVCGwTG25dV3tv4VCm5P8A', '2021-12-27 23:25:39', 'JiXuXu', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAASVCGwTG25dV3tv4VCm5P8A', '2021-12-27 23:25:39', 'petercai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAASVCGwTG25dV3tv4VCm5P8A', '2021-12-27 23:25:39', 'SunXiWang', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAASVCGwTG25dV3tv4VCm5P8A', '2021-12-27 23:25:39', 'WangXiaoFeng', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAASVCGwTG25dV3tv4VCm5P8A', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAT-roq7DwiDbMwRonUI709w', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAtBKbhld9_fVPy-EzGMOl4w', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAteEDbKMUAKlzM7xrsQKiqQ', '2021-12-27 23:25:39', 'JiXuXu', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAu610mafEXes_En4zjhQ2eQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAudYbU4lIZfxGnQPXZn4A0Q', '2021-12-27 23:25:39', 'petercai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAULZ9FxWvVWA8GGsLwlrLnQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAuW42ERRZc4_I4fDvdY5wAA', '2021-12-27 23:25:39', 'WangYuMan', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAV2RuLXNetKZ7jOKrjWcXwg', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAw5NUU3DqWzbMzKCHu4dOTw', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAWxtwkhkw2tyrYJjlX6WJAA', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAx5Y610szC5gnvuEJ_SvM-g', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAAX7SOgypmp4DC83H9ngZRRg', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAX7whLUWEr_og8rhNXdPgig', '2021-12-27 23:25:39', 'JiXuXu', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAX7whLUWEr_og8rhNXdPgig', '2021-12-27 23:25:39', 'SunXiWang', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAXqDrbhrZSKw-sHuxAwyqLA', '2021-12-27 23:25:39', 'JiangPengKai', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAXqDrbhrZSKw-sHuxAwyqLA', '2021-12-27 23:25:39', 'WangXiaoFeng', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAy3xMgRgIxWEFUeefbjzVbw', '2021-12-27 23:25:39', 'JiXuXu', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAysjRW8MXTnkX1m5fRyrnpQ', '2021-12-27 23:25:39', 'SunXiWang', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES (NULL, 'wmiGuBCgAAYSVNr7GZtnp031nFb7GFGA', '2021-12-27 23:25:39', 'WenBin', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'wmiGuBCgAA_G70i6XcALW_WMdw5wsoHw', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'woiGuBCgAAfRDB9Q6-tyM4ntqS0lu7jA', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
+INSERT INTO `we_allocate_customer` VALUES ('ShengXiYong', 'woiGuBCgAAsj6jvVBL497iwbn7EVeGUQ', '2021-12-27 23:03:51', 'FengJuZhuDeJieDao', 2, NULL, '离职继承', 0);
 COMMIT;
 
 -- ----------------------------
@@ -1889,6 +2027,8 @@ CREATE TABLE `we_allocate_group` (
 -- Records of we_allocate_group
 -- ----------------------------
 BEGIN;
+INSERT INTO `we_allocate_group` VALUES ('wriGuBCgAAHGA0E7tLqwSf3iam31TSlQ', 'ShengXiYong', NULL, 3, 'FengJuZhuDeJieDao', '2021-12-27 23:35:41');
+INSERT INTO `we_allocate_group` VALUES ('wriGuBCgAAv_RN3mRu6GYv2ej4g6y71g', 'ShengXiYong', NULL, 3, 'FengJuZhuDeJieDao', '2021-12-27 23:35:41');
 COMMIT;
 
 -- ----------------------------
@@ -2042,6 +2182,41 @@ CREATE TABLE `we_chat_item` (
 -- Records of we_chat_item
 -- ----------------------------
 BEGIN;
+INSERT INTO `we_chat_item` VALUES (1448191877458300928, 6, 1446692446749724672, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1448191877458300929, 6, 1446692148031393792, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1448191877458300930, 6, 1446691809320374272, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1448191877458300931, 6, 1446683660953718784, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1448191877458300932, 6, 1446088553518993408, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1448191877458300933, 6, 1446057686213988352, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1448191877458300934, 6, 1446019827868241920, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1448191877458300935, 6, 1445590448054865920, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1448191877458300936, 6, 1445590411862216704, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1448191877458300937, 6, 1445589496690249728, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1448191877458300938, 6, 1443756439070969856, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1450432241384689664, 4, 1415361334123565056, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1450432241384689665, 4, 1416330815683563521, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1450432241384689666, 4, 1427205974866923521, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179648, 5, 1392776486477500416, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179649, 5, 1422086511842693121, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179650, 5, 1425267663583711233, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179651, 5, 1427922431812702209, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179652, 5, 1433347767916433409, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179653, 5, 1433645876282265601, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179654, 5, 1434899473154314240, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179655, 5, 1434899581711290369, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179656, 5, 1435268656664809473, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179657, 5, 1435465748788154369, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179658, 5, 1435466183540346881, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179659, 5, 1435793320826769409, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179660, 5, 1440591762312794113, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1452462050881179661, 5, 1441248506441502720, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1453993655042969600, 1, 1437987145179598848, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1453993655042969601, 1, 1443452625034022913, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1453993655042969602, 1, 1443452897961578497, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1453993655042969603, 1, 1443757013678034945, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1453993655042969604, 1, 1447392380276838400, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1453993655042969605, 1, 1448577920569315328, NULL, NULL, NULL, NULL);
+INSERT INTO `we_chat_item` VALUES (1453993655042969606, 1, 1453606864506982400, NULL, NULL, NULL, NULL);
 COMMIT;
 
 -- ----------------------------
@@ -2066,11 +2241,11 @@ CREATE TABLE `we_chat_side` (
 -- Records of we_chat_side
 -- ----------------------------
 BEGIN;
-INSERT INTO `we_chat_side` VALUES (1, 0, '图片', 2, 0, NULL, NULL, NULL, NULL, 0);
-INSERT INTO `we_chat_side` VALUES (3, 2, '视频', 1, 0, NULL, NULL, NULL, NULL, 0);
+INSERT INTO `we_chat_side` VALUES (1, 0, '图片', 7, 0, NULL, NULL, NULL, NULL, 0);
+INSERT INTO `we_chat_side` VALUES (3, 2, '视频', 0, 0, NULL, NULL, NULL, NULL, 0);
 INSERT INTO `we_chat_side` VALUES (4, 3, '文件类型', 3, 0, NULL, NULL, NULL, NULL, 0);
-INSERT INTO `we_chat_side` VALUES (5, 4, '文本类型', 1, 0, NULL, NULL, NULL, NULL, 0);
-INSERT INTO `we_chat_side` VALUES (6, 5, '海报类型', 1, 0, NULL, NULL, NULL, NULL, 0);
+INSERT INTO `we_chat_side` VALUES (5, 4, '文本类型', 14, 0, NULL, NULL, NULL, NULL, 0);
+INSERT INTO `we_chat_side` VALUES (6, 5, '海报类型', 11, 1, NULL, NULL, NULL, NULL, 0);
 COMMIT;
 
 -- ----------------------------
@@ -2145,7 +2320,7 @@ CREATE TABLE `we_corp_account` (
   `sop_tag_redirect_url` varchar(255) DEFAULT NULL COMMENT '群sop和老客标签建群，跳转链接',
   `seas_redirect_url` varchar(255) DEFAULT NULL COMMENT '客户公海，跳转链接',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1430449146875219970 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='企业id相关配置';
+) ENGINE=InnoDB AUTO_INCREMENT=1430449146875219969 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='企业id相关配置';
 
 -- ----------------------------
 -- Records of we_corp_account
@@ -2159,8 +2334,8 @@ COMMIT;
 DROP TABLE IF EXISTS `we_customer`;
 CREATE TABLE `we_customer` (
   `corp_id` varchar(50) DEFAULT NULL COMMENT '企业id',
-  `external_userid` varchar(32) NOT NULL COMMENT '外部联系人的userid',
-  `name` varchar(32) DEFAULT NULL COMMENT '外部联系人名称',
+  `external_userid` varchar(100) NOT NULL COMMENT '外部联系人的userid',
+  `name` varchar(100) DEFAULT NULL COMMENT '外部联系人名称',
   `customer_type` tinyint(255) DEFAULT NULL COMMENT '外部联系人的类型，1表示该外部联系人是微信用户，2表示该外部联系人是企业微信用户',
   `avatar` varchar(200) DEFAULT NULL COMMENT '外部联系人头像',
   `gender` tinyint(4) NOT NULL DEFAULT '0' COMMENT '外部联系人性别 0-未知 1-男性 2-女性',
@@ -2181,14 +2356,19 @@ CREATE TABLE `we_customer` (
   `track_content` varchar(900) DEFAULT NULL COMMENT '跟进内容',
   `track_time` datetime DEFAULT NULL COMMENT '跟进时间',
   `phone` varchar(20) DEFAULT NULL COMMENT '手机号',
-  `email` varchar(50) DEFAULT NULL COMMENT '邮箱',
+  `email` varchar(100) DEFAULT NULL COMMENT '邮箱',
   `qq` varchar(50) DEFAULT NULL COMMENT 'QQ号',
   `other_descr` varchar(1000) DEFAULT NULL COMMENT '其他描述',
   `address` varchar(300) DEFAULT NULL COMMENT '地址',
   `takeover_user_id` varchar(64) DEFAULT NULL COMMENT '当前接替人',
   `add_method` int(1) DEFAULT NULL,
   `state` varchar(64) DEFAULT NULL,
-  PRIMARY KEY (`external_userid`,`first_user_id`) USING BTREE
+  `tag_ids` varchar(600) DEFAULT NULL COMMENT '企业标签id，多个逗号隔开',
+  PRIMARY KEY (`external_userid`,`first_user_id`) USING BTREE,
+  KEY `first_add_time` (`first_add_time`) USING BTREE COMMENT '添加时间索引字段',
+  KEY `userId` (`external_userid`) USING BTREE COMMENT '客户id',
+  KEY `first_user_id` (`first_user_id`) USING BTREE,
+  KEY `check` (`del_flag`,`first_user_id`,`first_add_time`,`gender`,`track_state`,`tag_ids`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='企业微信客户表';
 
 -- ----------------------------
@@ -2534,7 +2714,7 @@ COMMIT;
 DROP TABLE IF EXISTS `we_flower_customer_tag_rel`;
 CREATE TABLE `we_flower_customer_tag_rel` (
   `user_id` varchar(32) NOT NULL COMMENT '员工id',
-  `external_userid` varchar(32) NOT NULL COMMENT '客户id',
+  `external_userid` varchar(100) NOT NULL COMMENT '客户id',
   `tag_id` varchar(32) NOT NULL COMMENT '标签id',
   `is_company_tag` tinyint(1) DEFAULT '1' COMMENT '是否是企业标签:1:是;0:否',
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
@@ -2554,7 +2734,7 @@ COMMIT;
 DROP TABLE IF EXISTS `we_group`;
 CREATE TABLE `we_group` (
   `chat_id` varchar(32) NOT NULL COMMENT '群聊id',
-  `group_name` varchar(20) DEFAULT '群聊' COMMENT '群名',
+  `group_name` varchar(200) DEFAULT '群聊' COMMENT '群名',
   `add_time` datetime NOT NULL COMMENT '群创建时间',
   `notice` text COMMENT '群公告',
   `owner` varchar(32) DEFAULT NULL COMMENT '群主userId',
@@ -2658,7 +2838,7 @@ CREATE TABLE `we_group_member` (
   `del_flag` tinyint(4) NOT NULL DEFAULT '0' COMMENT '删除标识 0 正常 1 删除',
   PRIMARY KEY (`id`),
   UNIQUE KEY `uindex_chatid_userid` (`chat_id`,`user_id`,`del_flag`)
-) ENGINE=InnoDB AUTO_INCREMENT=1430003699749237983 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='企业微信群成员';
+) ENGINE=InnoDB AUTO_INCREMENT=1430003699749237965 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='企业微信群成员';
 
 -- ----------------------------
 -- Records of we_group_member
@@ -2691,7 +2871,7 @@ CREATE TABLE `we_group_message_attachments` (
   PRIMARY KEY (`id`),
   KEY `msg_id_index` (`msg_id`,`del_flag`),
   KEY `msg_template_Id_index` (`msg_template_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=94 DEFAULT CHARSET=utf8mb4 COMMENT='群发消息附件表';
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8mb4 COMMENT='群发消息附件表';
 
 -- ----------------------------
 -- Records of we_group_message_attachments
@@ -2719,7 +2899,7 @@ CREATE TABLE `we_group_message_list` (
   PRIMARY KEY (`id`),
   KEY `msg_id_index` (`msg_id`,`del_flag`),
   KEY `template_id__index` (`msg_template_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=324 DEFAULT CHARSET=utf8mb4 COMMENT='群发消息列表';
+) ENGINE=InnoDB AUTO_INCREMENT=205 DEFAULT CHARSET=utf8mb4 COMMENT='群发消息列表';
 
 -- ----------------------------
 -- Records of we_group_message_list
@@ -2748,7 +2928,7 @@ CREATE TABLE `we_group_message_send_result` (
   PRIMARY KEY (`id`),
   KEY `msg_id_index` (`msg_id`,`del_flag`),
   KEY `msg_template_id_index` (`msg_template_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12859 DEFAULT CHARSET=utf8mb4 COMMENT='群发消息成员执行结果表';
+) ENGINE=InnoDB AUTO_INCREMENT=12676 DEFAULT CHARSET=utf8mb4 COMMENT='群发消息成员执行结果表';
 
 -- ----------------------------
 -- Records of we_group_message_send_result
@@ -2775,7 +2955,7 @@ CREATE TABLE `we_group_message_task` (
   PRIMARY KEY (`id`),
   KEY `msg_id_index` (`msg_id`,`del_flag`),
   KEY `msg_template_id_index` (`msg_template_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=325 DEFAULT CHARSET=utf8mb4 COMMENT='群发消息成员发送任务表';
+) ENGINE=InnoDB AUTO_INCREMENT=199 DEFAULT CHARSET=utf8mb4 COMMENT='群发消息成员发送任务表';
 
 -- ----------------------------
 -- Records of we_group_message_task
@@ -2804,7 +2984,7 @@ CREATE TABLE `we_group_message_template` (
   `update_time` datetime DEFAULT NULL COMMENT '修改时间',
   `del_flag` tinyint(4) NOT NULL DEFAULT '0' COMMENT '删除标识 0 有效 1删除',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=86 DEFAULT CHARSET=utf8mb4 COMMENT='群发消息模板';
+) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8mb4 COMMENT='群发消息模板';
 
 -- ----------------------------
 -- Records of we_group_message_template
@@ -2901,7 +3081,7 @@ CREATE TABLE `we_group_statistic` (
   `msg_total` int(10) DEFAULT NULL COMMENT '截至当天客户群消息总数',
   PRIMARY KEY (`id`),
   KEY `stat_time_index` (`stat_time`,`chat_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1475889291489026051 DEFAULT CHARSET=utf8 COMMENT='群聊数据统计数据\r\n';
+) ENGINE=InnoDB AUTO_INCREMENT=1482774660968873990 DEFAULT CHARSET=utf8 COMMENT='群聊数据统计数据\r\n';
 
 -- ----------------------------
 -- Records of we_group_statistic
@@ -3109,7 +3289,7 @@ CREATE TABLE `we_page_statistics` (
   `update_time` datetime DEFAULT NULL COMMENT '修改时间',
   `del_flag` tinyint(4) NOT NULL DEFAULT '0' COMMENT '删除标识 0 有效 1删除',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=latin1 COMMENT='首页数据统计表';
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1 COMMENT='首页数据统计表';
 
 -- ----------------------------
 -- Records of we_page_statistics
@@ -3139,7 +3319,7 @@ CREATE TABLE `we_poster` (
   `update_time` timestamp NULL DEFAULT NULL,
   `del_flag` tinyint(4) DEFAULT '0' COMMENT '0 正常 1 删除',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COMMENT='海报';
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COMMENT='海报';
 
 -- ----------------------------
 -- Records of we_poster
@@ -3203,7 +3383,7 @@ CREATE TABLE `we_poster_subassembly` (
   `font_style` tinyint(255) DEFAULT NULL COMMENT '字体类型 0 通常 1 粗体 2 斜体',
   `order` int(255) DEFAULT NULL COMMENT '排序 顺序',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1473541231983333379 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=1473541231983333381 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of we_poster_subassembly
@@ -3325,7 +3505,7 @@ CREATE TABLE `we_qr_attachments` (
   `del_flag` tinyint(4) NOT NULL DEFAULT '0' COMMENT '删除标识 0 有效 1删除',
   PRIMARY KEY (`id`),
   KEY `qr_id_IDX` (`qr_id`,`del_flag`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=111 DEFAULT CHARSET=utf8mb4 COMMENT='活码附件表';
+) ENGINE=InnoDB AUTO_INCREMENT=86 DEFAULT CHARSET=utf8mb4 COMMENT='活码附件表';
 
 -- ----------------------------
 -- Records of we_qr_attachments
@@ -3354,7 +3534,7 @@ CREATE TABLE `we_qr_code` (
   `update_time` datetime DEFAULT NULL COMMENT '修改时间',
   `del_flag` tinyint(4) NOT NULL DEFAULT '0' COMMENT '删除标识 0 有效 1删除',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8mb4 COMMENT='活码信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COMMENT='活码信息表';
 
 -- ----------------------------
 -- Records of we_qr_code
@@ -3385,7 +3565,7 @@ CREATE TABLE `we_qr_scope` (
   `del_flag` tinyint(4) NOT NULL DEFAULT '0' COMMENT '删除标识 0 有效 1删除',
   PRIMARY KEY (`id`),
   KEY `qr_id_IDX` (`qr_id`,`del_flag`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8mb4 COMMENT='活码使用范围表';
+) ENGINE=InnoDB AUTO_INCREMENT=94 DEFAULT CHARSET=utf8mb4 COMMENT='活码使用范围表';
 
 -- ----------------------------
 -- Records of we_qr_scope
@@ -3408,10 +3588,88 @@ CREATE TABLE `we_qr_tag_rel` (
   `del_flag` tinyint(4) NOT NULL DEFAULT '0' COMMENT '删除标识 0 有效 1删除',
   PRIMARY KEY (`id`),
   KEY `qr_id_IDX` (`qr_id`,`del_flag`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8mb4 COMMENT='活码标签关联表';
+) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8mb4 COMMENT='活码标签关联表';
 
 -- ----------------------------
 -- Records of we_qr_tag_rel
+-- ----------------------------
+BEGIN;
+COMMIT;
+
+-- ----------------------------
+-- Table structure for we_red_envelopes
+-- ----------------------------
+DROP TABLE IF EXISTS `we_red_envelopes`;
+CREATE TABLE `we_red_envelopes` (
+  `id` bigint(20) NOT NULL COMMENT '主键',
+  `money` decimal(10,0) DEFAULT NULL COMMENT '金额',
+  `scene_type` tinyint(4) DEFAULT NULL COMMENT '1:客户;2:客群;3:客户与客群',
+  `name` varchar(100) DEFAULT NULL COMMENT '红包名称',
+  `status` tinyint(1) DEFAULT NULL COMMENT '0:启用;1:停用',
+  `send_times` int(11) DEFAULT '0' COMMENT '发送次数',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `create_by` varchar(60) DEFAULT NULL COMMENT '创建人',
+  `update_by` varchar(60) DEFAULT NULL COMMENT '更新人',
+  `del_flag` tinyint(1) DEFAULT '0' COMMENT '0:正常;1:删除;',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='红包';
+
+-- ----------------------------
+-- Records of we_red_envelopes
+-- ----------------------------
+BEGIN;
+COMMIT;
+
+-- ----------------------------
+-- Table structure for we_red_envelopes_limit
+-- ----------------------------
+DROP TABLE IF EXISTS `we_red_envelopes_limit`;
+CREATE TABLE `we_red_envelopes_limit` (
+  `id` bigint(20) NOT NULL COMMENT '主键',
+  `single_day_pay` decimal(10,0) DEFAULT NULL COMMENT '单日付款总额',
+  `single_customer_receive_num` int(11) DEFAULT NULL COMMENT '单日客户收红包次数',
+  `single_customer_receive_money` decimal(10,0) DEFAULT NULL COMMENT '单日每客户收红包总额',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `create_by` varchar(60) DEFAULT NULL COMMENT '创建人',
+  `update_by` varchar(60) DEFAULT NULL COMMENT '更新人',
+  `del_flag` tinyint(1) DEFAULT NULL COMMENT '0:正常;1:删除;',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='红包限制';
+
+-- ----------------------------
+-- Records of we_red_envelopes_limit
+-- ----------------------------
+BEGIN;
+COMMIT;
+
+-- ----------------------------
+-- Table structure for we_red_envelopes_record
+-- ----------------------------
+DROP TABLE IF EXISTS `we_red_envelopes_record`;
+CREATE TABLE `we_red_envelopes_record` (
+  `id` bigint(20) NOT NULL COMMENT '主键',
+  `user_id` varchar(64) DEFAULT NULL COMMENT '员工id',
+  `external_userid` varchar(100) DEFAULT NULL COMMENT '客户id',
+  `group_id` varchar(100) DEFAULT NULL COMMENT '群id',
+  `red_envelope_num` int(1) DEFAULT NULL COMMENT '红包个数',
+  `receive_type` tinyint(1) DEFAULT NULL COMMENT '红包领取人:1:好友客户;2:群成员',
+  `red_envelope_money` decimal(1,0) DEFAULT NULL COMMENT '红包金额',
+  `red_envelope_type` tinyint(4) DEFAULT '1' COMMENT '1: 普通红包2:拼手气红包',
+  `money` decimal(10,0) DEFAULT NULL COMMENT '红包金额',
+  `send_state` tinyint(4) DEFAULT NULL COMMENT '发送状态:1:待领取;2:已领取;3:发放失败;4:退款中;5:已退款',
+  `order_no` varchar(100) DEFAULT NULL COMMENT '交易订单号',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `create_by` varchar(60) DEFAULT NULL COMMENT '创建人',
+  `update_by` varchar(60) DEFAULT NULL COMMENT '更新人',
+  `del_flag` tinyint(1) DEFAULT NULL COMMENT '0:正常;1:删除;',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='客户红包发放记录';
+
+-- ----------------------------
+-- Records of we_red_envelopes_record
 -- ----------------------------
 BEGIN;
 COMMIT;
@@ -3433,7 +3691,7 @@ CREATE TABLE `we_sensitive` (
   `update_by` varchar(64) DEFAULT NULL COMMENT '更新人',
   `update_time` datetime DEFAULT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='敏感词设置表';
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='敏感词设置表';
 
 -- ----------------------------
 -- Records of we_sensitive
@@ -3501,7 +3759,7 @@ CREATE TABLE `we_sensitive_audit_scope` (
   `audit_scope_id` varchar(64) NOT NULL COMMENT '审计对象id',
   `audit_scope_name` varchar(64) NOT NULL COMMENT '审计对象名称',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='敏感词审计范围';
+) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='敏感词审计范围';
 
 -- ----------------------------
 -- Records of we_sensitive_audit_scope
@@ -3604,7 +3862,7 @@ CREATE TABLE `we_task_fission` (
   `update_by` varchar(100) DEFAULT NULL COMMENT '更新人',
   `update_time` datetime DEFAULT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=177 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='任务宝表';
+) ENGINE=InnoDB AUTO_INCREMENT=161 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='任务宝表';
 
 -- ----------------------------
 -- Records of we_task_fission
@@ -3692,7 +3950,7 @@ CREATE TABLE `we_task_fission_staff` (
   `staff_id` varchar(64) DEFAULT NULL COMMENT '员工或组织机构id,为全部时为空',
   `staff_name` varchar(100) DEFAULT NULL COMMENT '员工或组织机构姓名，类型为全部时，为空',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=214 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='裂变任务员工列表';
+) ENGINE=InnoDB AUTO_INCREMENT=191 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='裂变任务员工列表';
 
 -- ----------------------------
 -- Records of we_task_fission_staff
@@ -3762,10 +4020,33 @@ CREATE TABLE `we_user_behavior_data` (
   `negative_feedback_cnt` int(11) DEFAULT NULL COMMENT '删除/拉黑成员的客户数，即将成员删除或加入黑名单的客户数',
   PRIMARY KEY (`id`),
   KEY `stat_time_index` (`stat_time`,`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1478063615385874434 DEFAULT CHARSET=utf8 COMMENT='联系客户统计数据 ';
+) ENGINE=InnoDB AUTO_INCREMENT=1482774657374355463 DEFAULT CHARSET=utf8 COMMENT='联系客户统计数据 ';
 
 -- ----------------------------
 -- Records of we_user_behavior_data
+-- ----------------------------
+BEGIN;
+COMMIT;
+
+-- ----------------------------
+-- Table structure for we_user_red_envelops_limit
+-- ----------------------------
+DROP TABLE IF EXISTS `we_user_red_envelops_limit`;
+CREATE TABLE `we_user_red_envelops_limit` (
+  `id` bigint(20) NOT NULL COMMENT '主键',
+  `user_id` varchar(0) NOT NULL COMMENT '员工id',
+  `single_customer_receive_num` decimal(10,0) DEFAULT NULL COMMENT '单日每员工发红包次数',
+  `single_customer_receive_money` decimal(10,0) DEFAULT NULL COMMENT '单日每员工发红包总额',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `create_by` varchar(60) DEFAULT NULL COMMENT '创建人',
+  `update_by` varchar(0) DEFAULT NULL COMMENT '更新人',
+  `del_flag` tinyint(4) DEFAULT NULL COMMENT '0:正常;1:删除;',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='员工发送红包限额';
+
+-- ----------------------------
+-- Records of we_user_red_envelops_limit
 -- ----------------------------
 BEGIN;
 COMMIT;
